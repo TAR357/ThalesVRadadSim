@@ -32,12 +32,12 @@ public class TextManager : MonoBehaviour
         if(BM != null && IM==null)
         {
             StatusGO.SetActive(true);
-            BMLaunched();
-            StartCoroutine("WarningLoop");
+            BMLaunched();           
         }        
         if(Radar.GetComponent<RadarDetection>().MissileDetected==true)
         {
             BMDetected();
+            StartCoroutine("WarningLoop");
         }            
         
     }
@@ -62,5 +62,6 @@ public class TextManager : MonoBehaviour
         warningGO.SetActive(true);       
         yield return new WaitForSeconds(10f);
         warningGO.SetActive(false);
+        StopCoroutine("WarningLoop");
     }
 }

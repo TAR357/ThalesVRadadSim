@@ -6,6 +6,7 @@ public class TrajectoryFollow : MonoBehaviour
 {
     private TrajectoryScript trajectoryScript;
     private GameObject Trajectory;
+    public GameObject explosion;
     [SerializeField]
     private Transform TrajectoryTransform;
     [SerializeField]
@@ -49,11 +50,12 @@ public class TrajectoryFollow : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag=="IM")
+        if (other.gameObject.tag == "IM")
         {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
+            StartCoroutine("Impact");            
+            Destroy(other.gameObject);            
         }
+        
     }
 
     private IEnumerator FollowTrajectory()
@@ -70,7 +72,7 @@ public class TrajectoryFollow : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         if(transform.position==objectPos)
-        {
+        {            
             Destroy(this.gameObject);
             StopCoroutine(FollowTrajectory());
             if(this.gameObject.tag!="target")
@@ -80,5 +82,12 @@ public class TrajectoryFollow : MonoBehaviour
         }
         tParam = 0f;
         coroutineAllowed = true;
+    }
+
+    private IEnumerator Impact()
+    {
+        Instantiate(explosion, transform);
+        yield return new WaitForSeconds(2f);
+        Instantiate(explosion, transform);
     }
 }
