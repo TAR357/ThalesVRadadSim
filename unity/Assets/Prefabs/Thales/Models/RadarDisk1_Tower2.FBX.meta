@@ -1,0 +1,1123 @@
+fileFormatVersion: 2
+guid: be8d703aa7a125449bb14324f3fd2a17
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ' 1'
+    100002: ' 10'
+    100004: ' 11'
+    100006: ' 12'
+    100008: ' 13'
+    100010: ' 14'
+    100012: ' 15'
+    100014: ' 16'
+    100016: ' 17'
+    100018: ' 18'
+    100020: ' 19'
+    100022: ' 2'
+    100024: ' 20'
+    100026: ' 21'
+    100028: ' 22'
+    100030: ' 23'
+    100032: ' 24'
+    100034: ' 25'
+    100036: ' 26'
+    100038: ' 27'
+    100040: ' 28'
+    100042: ' 29'
+    100044: ' 3'
+    100046: ' 30'
+    100048: ' 31'
+    100050: ' 32'
+    100052: ' 33'
+    100054: ' 34'
+    100056: ' 35'
+    100058: ' 36'
+    100060: ' 37'
+    100062: ' 38'
+    100064: ' 39'
+    100066: ' 4'
+    100068: ' 40'
+    100070: ' 41'
+    100072: ' 42'
+    100074: ' 43'
+    100076: ' 44'
+    100078: ' 45'
+    100080: ' 46'
+    100082: ' 47'
+    100084: ' 48'
+    100086: ' 49'
+    100088: ' 5'
+    100090: ' 50'
+    100092: ' 51'
+    100094: ' 52'
+    100096: ' 53'
+    100098: ' 54'
+    100100: ' 55'
+    100102: ' 56'
+    100104: ' 57'
+    100106: ' 58'
+    100108: ' 59'
+    100110: ' 6'
+    100112: ' 60'
+    100114: ' 61'
+    100116: ' 62'
+    100118: ' 63'
+    100120: ' 64'
+    100122: ' 65'
+    100124: ' 66'
+    100126: ' 67'
+    100128: ' 68'
+    100130: ' 69'
+    100132: ' 7'
+    100134: ' 70'
+    100136: ' 71'
+    100138: ' 72'
+    100140: ' 73'
+    100142: ' 74'
+    100144: ' 75'
+    100146: ' 8'
+    100148: ' 9'
+    100150: -DC_Shell
+    100152: -DC_Shell 1
+    100154: -DC_Shell 10
+    100156: -DC_Shell 11
+    100158: -DC_Shell 12
+    100160: -DC_Shell 13
+    100162: -DC_Shell 14
+    100164: -DC_Shell 15
+    100166: -DC_Shell 16
+    100168: -DC_Shell 17
+    100170: -DC_Shell 18
+    100172: -DC_Shell 2
+    100174: -DC_Shell 3
+    100176: -DC_Shell 4
+    100178: -DC_Shell 5
+    100180: -DC_Shell 6
+    100182: -DC_Shell 7
+    100184: -DC_Shell 8
+    100186: -DC_Shell 9
+    100188: -DC_Shell001
+    100190: 118657-1_AF0
+    100192: 118657-1_AF0 1
+    100194: 118657_ASM
+    100196: 118657_ASM 1
+    100198: 118657_IP
+    100200: 118657_IP 1
+    100202: 118657_IP-DC_Null
+    100204: 118658_ASM
+    100206: 118658_ASM 1
+    100208: 3522441429_DUMMY
+    100210: 3522441429_DUMMY 1
+    100212: 3522441430_DUMMY
+    100214: 3522441430_DUMMY 1
+    100216: 8130_VO_TOREN_30052016
+    100218: 8130_VO_TOREN_30052016 1
+    100220: airco-01
+    100222: airco-02
+    100224: back
+    100226: beton-ring-support
+    100228: Box001
+    100230: Box002
+    100232: Box003
+    100234: Box04
+    100236: Box257
+    100238: Box258
+    100240: Box259
+    100242: Box260
+    100244: Box261
+    100246: Box262
+    100248: Box263
+    100250: Box264
+    100252: Box265
+    100254: Box266
+    100256: Box267
+    100258: Box268
+    100260: Box269
+    100262: Box272
+    100264: Box273
+    100266: Box274
+    100268: Box275
+    100270: Box276
+    100272: Box277
+    100274: Box278
+    100276: Box279
+    100278: building-beton
+    100280: Camera002
+    100282: corner-01
+    100284: corner-02
+    100286: corners-big-01
+    100288: corners-big-02
+    100290: Cylinder010
+    100292: Cylinder011
+    100294: Cylinder012
+    100296: Cylinder013
+    100298: Cylinder014
+    100300: Cylinder015
+    100302: Cylinder016
+    100304: Cylinder017
+    100306: Cylinder018
+    100308: Cylinder019
+    100310: Cylinder020
+    100312: Cylinder021
+    100314: Cylinder022
+    100316: Cylinder023
+    100318: Cylinder09
+    100320: dak-hek
+    100322: Direct001
+    100324: Direct001.Target
+    100326: door
+    100328: door-003
+    100330: door-02
+    100332: door-outside
+    100334: door002
+    100336: door01
+    100338: ELR
+    100340: front-back
+    100342: grip
+    100344: Group001
+    100346: hijsringen
+    100348: IFF
+    100350: IFF_INTFR1
+    100352: IFF_INTFR3
+    100354: kabel-gaten
+    100356: Line017
+    100358: mast-reduced
+    100360: mast-total
+    100362: Next assembly relationship
+    100364: Next assembly relationship 1
+    100366: Next assembly relationship 2
+    100368: Next assembly relationship 3
+    100370: Next assembly relationship 4
+    100372: Next assembly relationship 5
+    100374: Object01
+    100376: Object013
+    100378: Object014
+    100380: Object015
+    100382: Object016
+    100384: Object017
+    100386: Object02
+    100388: Object04
+    100390: Object05
+    100392: Object12
+    100394: Plane004
+    100396: Plane005
+    100398: Plane02
+    100400: Plane03
+    100402: //RootNode
+    100404: ring
+    100406: rooster-001
+    100408: rooster-002
+    100410: rooster-004
+    100412: rooster-005
+    100414: rooster-006
+    100416: roosters
+    100418: Sky001
+    100420: SMARTL_I10
+    100422: SMARTL_I11
+    100424: SMARTL_I12
+    100426: SMARTL_I13
+    100428: SMARTL_I14
+    100430: SMARTL_I15
+    100432: SMARTL_I16
+    100434: SMARTL_I17
+    100436: SMARTL_I18
+    100438: SMARTL_I19
+    100440: SMARTL_I20
+    100442: SMARTL_I21
+    100444: SMARTL_I22
+    100446: SMARTL_I23
+    100448: SMARTL_I24
+    100450: SMARTL_I25
+    100452: SMARTL_I26
+    100454: SMARTL_I27
+    100456: SMARTL_I28
+    100458: SMARTL_I29
+    100460: SMARTL_I30
+    100462: SMARTL_I31
+    100464: SMARTL_I32
+    100466: SMARTL_I33
+    100468: SMARTL_I34
+    100470: SMARTL_I35
+    100472: SMARTL_I36
+    100474: SMARTL_IF1
+    100476: SMARTL_IF2
+    100478: SMARTL_IF3
+    100480: SMARTL_IF4
+    100482: SMARTL_IF5
+    100484: SMARTL_IF6
+    100486: SMARTL_IF7
+    100488: SMARTL_IF8
+    100490: SMARTL_IF9
+    100492: SMARTL_IFF
+    100494: spriet-001
+    100496: spriet-002
+    100498: spriet-003
+    100500: spriet-004
+    100502: spriet-005
+    100504: spriet-006
+    100506: spriet-007
+    100508: spriet-008
+    100510: sprieten-002
+    100512: sprieten-1
+    100514: sprieten-nieuw
+    100516: tiles
+    100518: window-001
+    100520: window-002
+    100522: window-003
+    400000: ' 1'
+    400002: ' 10'
+    400004: ' 11'
+    400006: ' 12'
+    400008: ' 13'
+    400010: ' 14'
+    400012: ' 15'
+    400014: ' 16'
+    400016: ' 17'
+    400018: ' 18'
+    400020: ' 19'
+    400022: ' 2'
+    400024: ' 20'
+    400026: ' 21'
+    400028: ' 22'
+    400030: ' 23'
+    400032: ' 24'
+    400034: ' 25'
+    400036: ' 26'
+    400038: ' 27'
+    400040: ' 28'
+    400042: ' 29'
+    400044: ' 3'
+    400046: ' 30'
+    400048: ' 31'
+    400050: ' 32'
+    400052: ' 33'
+    400054: ' 34'
+    400056: ' 35'
+    400058: ' 36'
+    400060: ' 37'
+    400062: ' 38'
+    400064: ' 39'
+    400066: ' 4'
+    400068: ' 40'
+    400070: ' 41'
+    400072: ' 42'
+    400074: ' 43'
+    400076: ' 44'
+    400078: ' 45'
+    400080: ' 46'
+    400082: ' 47'
+    400084: ' 48'
+    400086: ' 49'
+    400088: ' 5'
+    400090: ' 50'
+    400092: ' 51'
+    400094: ' 52'
+    400096: ' 53'
+    400098: ' 54'
+    400100: ' 55'
+    400102: ' 56'
+    400104: ' 57'
+    400106: ' 58'
+    400108: ' 59'
+    400110: ' 6'
+    400112: ' 60'
+    400114: ' 61'
+    400116: ' 62'
+    400118: ' 63'
+    400120: ' 64'
+    400122: ' 65'
+    400124: ' 66'
+    400126: ' 67'
+    400128: ' 68'
+    400130: ' 69'
+    400132: ' 7'
+    400134: ' 70'
+    400136: ' 71'
+    400138: ' 72'
+    400140: ' 73'
+    400142: ' 74'
+    400144: ' 75'
+    400146: ' 8'
+    400148: ' 9'
+    400150: -DC_Shell
+    400152: -DC_Shell 1
+    400154: -DC_Shell 10
+    400156: -DC_Shell 11
+    400158: -DC_Shell 12
+    400160: -DC_Shell 13
+    400162: -DC_Shell 14
+    400164: -DC_Shell 15
+    400166: -DC_Shell 16
+    400168: -DC_Shell 17
+    400170: -DC_Shell 18
+    400172: -DC_Shell 2
+    400174: -DC_Shell 3
+    400176: -DC_Shell 4
+    400178: -DC_Shell 5
+    400180: -DC_Shell 6
+    400182: -DC_Shell 7
+    400184: -DC_Shell 8
+    400186: -DC_Shell 9
+    400188: -DC_Shell001
+    400190: 118657-1_AF0
+    400192: 118657-1_AF0 1
+    400194: 118657_ASM
+    400196: 118657_ASM 1
+    400198: 118657_IP
+    400200: 118657_IP 1
+    400202: 118657_IP-DC_Null
+    400204: 118658_ASM
+    400206: 118658_ASM 1
+    400208: 3522441429_DUMMY
+    400210: 3522441429_DUMMY 1
+    400212: 3522441430_DUMMY
+    400214: 3522441430_DUMMY 1
+    400216: 8130_VO_TOREN_30052016
+    400218: 8130_VO_TOREN_30052016 1
+    400220: airco-01
+    400222: airco-02
+    400224: back
+    400226: beton-ring-support
+    400228: Box001
+    400230: Box002
+    400232: Box003
+    400234: Box04
+    400236: Box257
+    400238: Box258
+    400240: Box259
+    400242: Box260
+    400244: Box261
+    400246: Box262
+    400248: Box263
+    400250: Box264
+    400252: Box265
+    400254: Box266
+    400256: Box267
+    400258: Box268
+    400260: Box269
+    400262: Box272
+    400264: Box273
+    400266: Box274
+    400268: Box275
+    400270: Box276
+    400272: Box277
+    400274: Box278
+    400276: Box279
+    400278: building-beton
+    400280: Camera002
+    400282: corner-01
+    400284: corner-02
+    400286: corners-big-01
+    400288: corners-big-02
+    400290: Cylinder010
+    400292: Cylinder011
+    400294: Cylinder012
+    400296: Cylinder013
+    400298: Cylinder014
+    400300: Cylinder015
+    400302: Cylinder016
+    400304: Cylinder017
+    400306: Cylinder018
+    400308: Cylinder019
+    400310: Cylinder020
+    400312: Cylinder021
+    400314: Cylinder022
+    400316: Cylinder023
+    400318: Cylinder09
+    400320: dak-hek
+    400322: Direct001
+    400324: Direct001.Target
+    400326: door
+    400328: door-003
+    400330: door-02
+    400332: door-outside
+    400334: door002
+    400336: door01
+    400338: ELR
+    400340: front-back
+    400342: grip
+    400344: Group001
+    400346: hijsringen
+    400348: IFF
+    400350: IFF_INTFR1
+    400352: IFF_INTFR3
+    400354: kabel-gaten
+    400356: Line017
+    400358: mast-reduced
+    400360: mast-total
+    400362: Next assembly relationship
+    400364: Next assembly relationship 1
+    400366: Next assembly relationship 2
+    400368: Next assembly relationship 3
+    400370: Next assembly relationship 4
+    400372: Next assembly relationship 5
+    400374: Object01
+    400376: Object013
+    400378: Object014
+    400380: Object015
+    400382: Object016
+    400384: Object017
+    400386: Object02
+    400388: Object04
+    400390: Object05
+    400392: Object12
+    400394: Plane004
+    400396: Plane005
+    400398: Plane02
+    400400: Plane03
+    400402: //RootNode
+    400404: ring
+    400406: rooster-001
+    400408: rooster-002
+    400410: rooster-004
+    400412: rooster-005
+    400414: rooster-006
+    400416: roosters
+    400418: Sky001
+    400420: SMARTL_I10
+    400422: SMARTL_I11
+    400424: SMARTL_I12
+    400426: SMARTL_I13
+    400428: SMARTL_I14
+    400430: SMARTL_I15
+    400432: SMARTL_I16
+    400434: SMARTL_I17
+    400436: SMARTL_I18
+    400438: SMARTL_I19
+    400440: SMARTL_I20
+    400442: SMARTL_I21
+    400444: SMARTL_I22
+    400446: SMARTL_I23
+    400448: SMARTL_I24
+    400450: SMARTL_I25
+    400452: SMARTL_I26
+    400454: SMARTL_I27
+    400456: SMARTL_I28
+    400458: SMARTL_I29
+    400460: SMARTL_I30
+    400462: SMARTL_I31
+    400464: SMARTL_I32
+    400466: SMARTL_I33
+    400468: SMARTL_I34
+    400470: SMARTL_I35
+    400472: SMARTL_I36
+    400474: SMARTL_IF1
+    400476: SMARTL_IF2
+    400478: SMARTL_IF3
+    400480: SMARTL_IF4
+    400482: SMARTL_IF5
+    400484: SMARTL_IF6
+    400486: SMARTL_IF7
+    400488: SMARTL_IF8
+    400490: SMARTL_IF9
+    400492: SMARTL_IFF
+    400494: spriet-001
+    400496: spriet-002
+    400498: spriet-003
+    400500: spriet-004
+    400502: spriet-005
+    400504: spriet-006
+    400506: spriet-007
+    400508: spriet-008
+    400510: sprieten-002
+    400512: sprieten-1
+    400514: sprieten-nieuw
+    400516: tiles
+    400518: window-001
+    400520: window-002
+    400522: window-003
+    2000000: Camera002
+    2100000: metal-chrome-dof
+    2100002: rodleur-black
+    2100004: glass
+    2100006: plastic-black
+    2100008: concrete-07-raar
+    2100010: metal-grey
+    2100012: glass-2
+    2100014: wood-white
+    2100016: 14 - Default
+    2100018: Metal_Chrome
+    2100020: SmartL-tile1
+    2100022: SmartL-tile3
+    2100024: SmartL-tile2
+    2100026: SmartL-tile6
+    2100028: SmartL-tile4
+    2100030: SmartL-tile5
+    2100032: metal-black-SmartL
+    2100034: default-black-darker
+    2100036: metal-green-SmartL
+    2100038: No Name
+    2100040: airco-1
+    2100042: airco-3
+    2100044: airco-2
+    2100046: metal-black2
+    2100048: 'Material #14'
+    2100050: 'Material #16'
+    2100052: metal-grey-SmartL
+    2300000: -DC_Shell
+    2300002: -DC_Shell 1
+    2300004: -DC_Shell 10
+    2300006: -DC_Shell 11
+    2300008: -DC_Shell 12
+    2300010: -DC_Shell 13
+    2300012: -DC_Shell 14
+    2300014: -DC_Shell 15
+    2300016: -DC_Shell 16
+    2300018: -DC_Shell 17
+    2300020: -DC_Shell 18
+    2300022: -DC_Shell 2
+    2300024: -DC_Shell 3
+    2300026: -DC_Shell 4
+    2300028: -DC_Shell 5
+    2300030: -DC_Shell 6
+    2300032: -DC_Shell 7
+    2300034: -DC_Shell 8
+    2300036: -DC_Shell 9
+    2300038: -DC_Shell001
+    2300040: airco-01
+    2300042: airco-02
+    2300044: back
+    2300046: beton-ring-support
+    2300048: Box001
+    2300050: Box002
+    2300052: Box003
+    2300054: Box04
+    2300056: Box257
+    2300058: Box258
+    2300060: Box259
+    2300062: Box260
+    2300064: Box261
+    2300066: Box262
+    2300068: Box263
+    2300070: Box264
+    2300072: Box265
+    2300074: Box266
+    2300076: Box267
+    2300078: Box268
+    2300080: Box269
+    2300082: Box272
+    2300084: Box273
+    2300086: Box274
+    2300088: Box275
+    2300090: Box276
+    2300092: Box277
+    2300094: Box278
+    2300096: Box279
+    2300098: building-beton
+    2300100: corner-01
+    2300102: corner-02
+    2300104: corners-big-01
+    2300106: corners-big-02
+    2300108: Cylinder010
+    2300110: Cylinder011
+    2300112: Cylinder012
+    2300114: Cylinder013
+    2300116: Cylinder014
+    2300118: Cylinder015
+    2300120: Cylinder016
+    2300122: Cylinder017
+    2300124: Cylinder018
+    2300126: Cylinder019
+    2300128: Cylinder020
+    2300130: Cylinder021
+    2300132: Cylinder022
+    2300134: Cylinder023
+    2300136: Cylinder09
+    2300138: door
+    2300140: door002
+    2300142: door01
+    2300144: front-back
+    2300146: grip
+    2300148: hijsringen
+    2300150: IFF_INTFR1
+    2300152: IFF_INTFR3
+    2300154: Line017
+    2300156: Object01
+    2300158: Object013
+    2300160: Object014
+    2300162: Object015
+    2300164: Object016
+    2300166: Object017
+    2300168: Object02
+    2300170: Object04
+    2300172: Object05
+    2300174: Object12
+    2300176: Plane004
+    2300178: Plane005
+    2300180: Plane02
+    2300182: Plane03
+    2300184: ring
+    2300186: rooster-001
+    2300188: rooster-002
+    2300190: rooster-004
+    2300192: rooster-005
+    2300194: rooster-006
+    2300196: SMARTL_I10
+    2300198: SMARTL_I11
+    2300200: SMARTL_I12
+    2300202: SMARTL_I13
+    2300204: SMARTL_I14
+    2300206: SMARTL_I15
+    2300208: SMARTL_I16
+    2300210: SMARTL_I17
+    2300212: SMARTL_I18
+    2300214: SMARTL_I19
+    2300216: SMARTL_I20
+    2300218: SMARTL_I21
+    2300220: SMARTL_I22
+    2300222: SMARTL_I23
+    2300224: SMARTL_I24
+    2300226: SMARTL_I25
+    2300228: SMARTL_I26
+    2300230: SMARTL_I27
+    2300232: SMARTL_I28
+    2300234: SMARTL_I29
+    2300236: SMARTL_I30
+    2300238: SMARTL_I31
+    2300240: SMARTL_I32
+    2300242: SMARTL_I33
+    2300244: SMARTL_I34
+    2300246: SMARTL_I35
+    2300248: SMARTL_I36
+    2300250: SMARTL_IF1
+    2300252: SMARTL_IF2
+    2300254: SMARTL_IF3
+    2300256: SMARTL_IF4
+    2300258: SMARTL_IF5
+    2300260: SMARTL_IF6
+    2300262: SMARTL_IF7
+    2300264: SMARTL_IF8
+    2300266: SMARTL_IF9
+    2300268: SMARTL_IFF
+    2300270: spriet-001
+    2300272: spriet-002
+    2300274: spriet-003
+    2300276: spriet-004
+    2300278: spriet-005
+    2300280: spriet-006
+    2300282: spriet-007
+    2300284: spriet-008
+    2300286: sprieten-002
+    2300288: sprieten-1
+    2300290: tiles
+    2300292: window-001
+    2300294: window-002
+    2300296: window-003
+    3300000: -DC_Shell
+    3300002: -DC_Shell 1
+    3300004: -DC_Shell 10
+    3300006: -DC_Shell 11
+    3300008: -DC_Shell 12
+    3300010: -DC_Shell 13
+    3300012: -DC_Shell 14
+    3300014: -DC_Shell 15
+    3300016: -DC_Shell 16
+    3300018: -DC_Shell 17
+    3300020: -DC_Shell 18
+    3300022: -DC_Shell 2
+    3300024: -DC_Shell 3
+    3300026: -DC_Shell 4
+    3300028: -DC_Shell 5
+    3300030: -DC_Shell 6
+    3300032: -DC_Shell 7
+    3300034: -DC_Shell 8
+    3300036: -DC_Shell 9
+    3300038: -DC_Shell001
+    3300040: airco-01
+    3300042: airco-02
+    3300044: back
+    3300046: beton-ring-support
+    3300048: Box001
+    3300050: Box002
+    3300052: Box003
+    3300054: Box04
+    3300056: Box257
+    3300058: Box258
+    3300060: Box259
+    3300062: Box260
+    3300064: Box261
+    3300066: Box262
+    3300068: Box263
+    3300070: Box264
+    3300072: Box265
+    3300074: Box266
+    3300076: Box267
+    3300078: Box268
+    3300080: Box269
+    3300082: Box272
+    3300084: Box273
+    3300086: Box274
+    3300088: Box275
+    3300090: Box276
+    3300092: Box277
+    3300094: Box278
+    3300096: Box279
+    3300098: building-beton
+    3300100: corner-01
+    3300102: corner-02
+    3300104: corners-big-01
+    3300106: corners-big-02
+    3300108: Cylinder010
+    3300110: Cylinder011
+    3300112: Cylinder012
+    3300114: Cylinder013
+    3300116: Cylinder014
+    3300118: Cylinder015
+    3300120: Cylinder016
+    3300122: Cylinder017
+    3300124: Cylinder018
+    3300126: Cylinder019
+    3300128: Cylinder020
+    3300130: Cylinder021
+    3300132: Cylinder022
+    3300134: Cylinder023
+    3300136: Cylinder09
+    3300138: door
+    3300140: door002
+    3300142: door01
+    3300144: front-back
+    3300146: grip
+    3300148: hijsringen
+    3300150: IFF_INTFR1
+    3300152: IFF_INTFR3
+    3300154: Line017
+    3300156: Object01
+    3300158: Object013
+    3300160: Object014
+    3300162: Object015
+    3300164: Object016
+    3300166: Object017
+    3300168: Object02
+    3300170: Object04
+    3300172: Object05
+    3300174: Object12
+    3300176: Plane004
+    3300178: Plane005
+    3300180: Plane02
+    3300182: Plane03
+    3300184: ring
+    3300186: rooster-001
+    3300188: rooster-002
+    3300190: rooster-004
+    3300192: rooster-005
+    3300194: rooster-006
+    3300196: SMARTL_I10
+    3300198: SMARTL_I11
+    3300200: SMARTL_I12
+    3300202: SMARTL_I13
+    3300204: SMARTL_I14
+    3300206: SMARTL_I15
+    3300208: SMARTL_I16
+    3300210: SMARTL_I17
+    3300212: SMARTL_I18
+    3300214: SMARTL_I19
+    3300216: SMARTL_I20
+    3300218: SMARTL_I21
+    3300220: SMARTL_I22
+    3300222: SMARTL_I23
+    3300224: SMARTL_I24
+    3300226: SMARTL_I25
+    3300228: SMARTL_I26
+    3300230: SMARTL_I27
+    3300232: SMARTL_I28
+    3300234: SMARTL_I29
+    3300236: SMARTL_I30
+    3300238: SMARTL_I31
+    3300240: SMARTL_I32
+    3300242: SMARTL_I33
+    3300244: SMARTL_I34
+    3300246: SMARTL_I35
+    3300248: SMARTL_I36
+    3300250: SMARTL_IF1
+    3300252: SMARTL_IF2
+    3300254: SMARTL_IF3
+    3300256: SMARTL_IF4
+    3300258: SMARTL_IF5
+    3300260: SMARTL_IF6
+    3300262: SMARTL_IF7
+    3300264: SMARTL_IF8
+    3300266: SMARTL_IF9
+    3300268: SMARTL_IFF
+    3300270: spriet-001
+    3300272: spriet-002
+    3300274: spriet-003
+    3300276: spriet-004
+    3300278: spriet-005
+    3300280: spriet-006
+    3300282: spriet-007
+    3300284: spriet-008
+    3300286: sprieten-002
+    3300288: sprieten-1
+    3300290: tiles
+    3300292: window-001
+    3300294: window-002
+    3300296: window-003
+    4300000: Box001
+    4300002: Box002
+    4300004: Box003
+    4300006: building-beton
+    4300008: Box260
+    4300010: Box261
+    4300012: Box262
+    4300014: Box263
+    4300016: Box264
+    4300018: Box265
+    4300020: Box266
+    4300022: Line017
+    4300024: door01
+    4300026: Box257
+    4300028: Box258
+    4300030: Box259
+    4300032: door002
+    4300034: Box267
+    4300036: Box268
+    4300038: Box269
+    4300040: tiles
+    4300042: back
+    4300044: Object02
+    4300046: Object04
+    4300048: front-back
+    4300050: Plane02
+    4300052: Plane03
+    4300054: Object05
+    4300056: corner-01
+    4300058: Object12
+    4300060: corner-02
+    4300062: Cylinder09
+    4300064: corners-big-01
+    4300066: Object01
+    4300068: Box04
+    4300070: corners-big-02
+    4300072: ring
+    4300074: SMARTL_I36
+    4300076: SMARTL_I35
+    4300078: SMARTL_I34
+    4300080: SMARTL_I33
+    4300082: SMARTL_I32
+    4300084: SMARTL_I31
+    4300086: SMARTL_I30
+    4300088: SMARTL_I29
+    4300090: SMARTL_I28
+    4300092: SMARTL_I27
+    4300094: SMARTL_I26
+    4300096: SMARTL_I25
+    4300098: SMARTL_I24
+    4300100: SMARTL_I23
+    4300102: SMARTL_I22
+    4300104: SMARTL_I21
+    4300106: SMARTL_I20
+    4300108: SMARTL_I19
+    4300110: SMARTL_I18
+    4300112: SMARTL_I17
+    4300114: SMARTL_I16
+    4300116: SMARTL_I15
+    4300118: SMARTL_I14
+    4300120: SMARTL_I13
+    4300122: SMARTL_I12
+    4300124: SMARTL_I11
+    4300126: SMARTL_I10
+    4300128: SMARTL_IF9
+    4300130: SMARTL_IF8
+    4300132: SMARTL_IF7
+    4300134: SMARTL_IF6
+    4300136: SMARTL_IF5
+    4300138: SMARTL_IF4
+    4300140: SMARTL_IF3
+    4300142: SMARTL_IF2
+    4300144: SMARTL_IF1
+    4300146: SMARTL_IFF
+    4300148: IFF_INTFR1
+    4300150: IFF_INTFR3
+    4300152: sprieten-002
+    4300154: sprieten-1
+    4300156: -DC_Shell
+    4300158: -DC_Shell
+    4300160: -DC_Shell
+    4300162: -DC_Shell
+    4300164: -DC_Shell
+    4300166: -DC_Shell
+    4300168: -DC_Shell
+    4300170: -DC_Shell
+    4300172: -DC_Shell
+    4300174: -DC_Shell
+    4300176: -DC_Shell
+    4300178: -DC_Shell
+    4300180: -DC_Shell
+    4300182: -DC_Shell
+    4300184: airco-02
+    4300186: airco-01
+    4300188: beton-ring-support
+    4300190: Cylinder017
+    4300192: Cylinder016
+    4300194: Cylinder015
+    4300196: Cylinder014
+    4300198: Cylinder013
+    4300200: Cylinder012
+    4300202: Cylinder011
+    4300204: Cylinder010
+    4300206: Object013
+    4300208: Object014
+    4300210: Object015
+    4300212: Object016
+    4300214: rooster-005
+    4300216: rooster-004
+    4300218: rooster-001
+    4300220: rooster-002
+    4300222: rooster-006
+    4300224: spriet-001
+    4300226: spriet-002
+    4300228: spriet-003
+    4300230: spriet-004
+    4300232: spriet-005
+    4300234: spriet-006
+    4300236: spriet-007
+    4300238: spriet-008
+    4300240: Box279
+    4300242: Box278
+    4300244: Box277
+    4300246: Box276
+    4300248: Box275
+    4300250: Box274
+    4300252: Box273
+    4300254: Box272
+    4300256: window-001
+    4300258: window-002
+    4300260: window-003
+    4300262: Cylinder018
+    4300264: Plane004
+    4300266: Plane005
+    4300268: Cylinder023
+    4300270: Cylinder022
+    4300272: Cylinder021
+    4300274: Cylinder020
+    4300276: Cylinder019
+    4300278: hijsringen
+    4300280: door
+    4300282: -DC_Shell
+    4300284: -DC_Shell
+    4300286: -DC_Shell
+    4300288: -DC_Shell
+    4300290: grip
+    4300292: Object017
+    4300294: -DC_Shell
+    4300296: -DC_Shell001
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Direct001
+    10800002: Sky001
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.000100000005
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

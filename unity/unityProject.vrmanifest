@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.thalesvrexperience.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\ThalesVR 1june\\ThalesVRadar-ac5ea98ce1be0a0573425ca527e5374407243a66\\unity\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Thales VR Experience [Testing]"
+        }
+      }
+    }
+  ]
+}
