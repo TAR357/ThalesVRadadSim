@@ -1,4 +1,4 @@
-# ThalesVRadadSim
+# ThalesVRadarSim
 
 Added Function
 - Trajectory Calculation using Bezier Curve
