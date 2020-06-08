@@ -6,6 +6,7 @@ public class TrajectoryFollow : MonoBehaviour
 {
     private TrajectoryScript trajectoryScript;
     private GameObject Trajectory;
+    private Vector3 objloc;
     public GameObject explosion;
     [SerializeField]
     private Transform TrajectoryTransform;
@@ -36,6 +37,7 @@ public class TrajectoryFollow : MonoBehaviour
 
     private void Update()
     {
+        objloc = gameObject.transform.position;
         for (int i = 0; i < TrajectoryTransform.childCount; i++)
         {
             cp[i] = TrajectoryTransform.GetChild(i).position;
@@ -52,7 +54,8 @@ public class TrajectoryFollow : MonoBehaviour
     {
         if (other.gameObject.tag == "IM")
         {
-            StartCoroutine("Impact");            
+            Instantiate(explosion, objloc, Quaternion.identity);
+            Destroy(gameObject);            
             Destroy(other.gameObject);            
         }
         
@@ -84,10 +87,5 @@ public class TrajectoryFollow : MonoBehaviour
         coroutineAllowed = true;
     }
 
-    private IEnumerator Impact()
-    {
-        Instantiate(explosion, transform);
-        yield return new WaitForSeconds(2f);
-        Instantiate(explosion, transform);
-    }
+ 
 }

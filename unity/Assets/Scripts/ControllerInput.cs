@@ -132,7 +132,7 @@ public class ControllerInput : MonoBehaviour
         m_Joint.connectedBody = targetBody;
         //Activate
         m_CurrentGrabable.m_Activated = this;
-
+        m_CurrentGrabable.transform.SetParent(gameObject.transform);
         yield return new WaitForSeconds(1f);
         itemGrabbed = true;       
     }
