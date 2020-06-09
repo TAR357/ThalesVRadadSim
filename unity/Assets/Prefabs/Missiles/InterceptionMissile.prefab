@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3955360853023529412}
   m_Layer: 0
   m_Name: Symbol
-  m_TagString: Untagged
+  m_TagString: MSymbol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 173526518088641527}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 300, y: 300, z: 1}
+  m_LocalScale: {x: 200, y: 200, z: 1}
   m_Children: []
   m_Father: {fileID: 4997443557097459140}
   m_RootOrder: 0

@@ -15,6 +15,7 @@ TagManager:
   - Symbol
   - IM
   - Button
+  - MSymbol
   layers:
   - Default
   - TransparentFX
