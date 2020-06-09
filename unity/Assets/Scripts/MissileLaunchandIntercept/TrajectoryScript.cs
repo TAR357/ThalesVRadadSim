@@ -8,23 +8,36 @@ public class TrajectoryScript : MonoBehaviour
     private Transform[] controlPoints;
 
     public GameObject Radar;
+    public GameObject BM;
 
     private Vector3 cpPosition;
 
     public LineRenderer lineRenderer;
     private Vector3[] positions=new Vector3[50];
+    private Vector3[] zeroPositions = new Vector3[50];
+    
     private int numpoints = 40;
 
     private void Start()
     {       
         lineRenderer =gameObject.GetComponent<LineRenderer>();
         lineRenderer.positionCount = numpoints;        
+        for(int i =0; i<zeroPositions.Length;i++)
+        {
+            zeroPositions[i] = Vector3.zero;
+        }
     }
     private void Update()
     {
-        if(Radar.gameObject.GetComponent<RadarDetection>().MissileDetected==true)
-        {
+        BM = GameObject.FindGameObjectWithTag("BallisticMissile");
+        //Debug.Log(lineRenderer.enabled);
+        if (Radar.gameObject.GetComponent<RadarDetection>().MissileDetected==true && BM!=null)
+        {            
             drawLineCurve();
+        }
+        if (Radar.gameObject.GetComponent<RadarDetection>().MissileDetected == false && BM==null)
+        {
+            drawLineCurveZero();
         }
     }
 
@@ -58,6 +71,16 @@ public class TrajectoryScript : MonoBehaviour
         {
             float t = i / (float)numpoints;
             positions[i - 1] = calculateTrajectory(controlPoints[0], controlPoints[1], controlPoints[2], controlPoints[3], t);
+        }
+        lineRenderer.SetPositions(positions);
+    }
+
+    public void drawLineCurveZero()
+    {
+
+        for (int i = 0; i < positions.Length; i++)
+        {
+            positions[i] = zeroPositions[i];
         }
         lineRenderer.SetPositions(positions);
     }

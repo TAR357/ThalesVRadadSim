@@ -20,8 +20,7 @@ public class Grabable : MonoBehaviour
     public ControllerInput m_Activated = null;
 
     private void Awake()
-    {
-        coolDownTimer = 5f;
+    {        
         Button = GameObject.FindGameObjectWithTag("Button");
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         LaunchPt = GameObject.FindGameObjectWithTag("BMLaunchPoint");
@@ -40,14 +39,11 @@ public class Grabable : MonoBehaviour
         
         if(Clicked==false)
         {
-            ButtonM.color = Color.green;
-            Button.GetComponent<buttonHit>().release();
-            StopCoroutine(Countdount());
+            ButtonM.color = Color.green;            
         }
         if(Clicked==true)
         {
-            ButtonM.color = Color.red;
-            StartCoroutine(Countdount());
+            ButtonM.color = Color.red;            
         }
     }
 
@@ -57,8 +53,8 @@ public class Grabable : MonoBehaviour
         if(Clicked==false)
         {
             LaunchPt.GetComponent<LaunchBM>().ButtonLaunch();
-            ButtonM.color = Color.red;
-            Clicked = true;
+           
+            StartCoroutine(Countdown());
         }
     }
 
@@ -70,9 +66,11 @@ public class Grabable : MonoBehaviour
         transform.SetParent(null);
     }
 
-    private IEnumerator Countdount()
+    private IEnumerator Countdown()
     {
+        Clicked = true;
         yield return new WaitForSeconds(coolDownTimer);
+        Button.GetComponent<buttonHit>().release();
         Clicked = false;       
     }
 }

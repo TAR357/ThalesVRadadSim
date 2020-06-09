@@ -18,7 +18,7 @@ public class buttonHit : MonoBehaviour
         if(Grabable.GetComponent<Grabable>().m_Activated!=null)
         {
             animator.SetBool("Pushed", true);
-            Grabable.GetComponent<Grabable>().Clicked = true;
+            Grabable.GetComponent<Grabable>().action();
         }
     }
 

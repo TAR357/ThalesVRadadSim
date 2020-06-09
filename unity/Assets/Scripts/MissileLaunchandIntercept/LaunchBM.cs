@@ -13,6 +13,7 @@ public class LaunchBM : MonoBehaviour
     [SerializeField]
     private float timeBetween;
     private GameObject BMlaunched;
+    private GameObject TargetLaunched;
     private bool coroutineAllowed;
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class LaunchBM : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.X))
         {
-            if(coroutineAllowed && BMlaunched==null)
+            if(coroutineAllowed && TargetLaunched == null)
             {
                 StartCoroutine(Launch());
             }
@@ -35,14 +36,17 @@ public class LaunchBM : MonoBehaviour
     
     public void ButtonLaunch()
     {
-        Debug.Log("Launch");        
-        StartCoroutine(Launch());
+        Debug.Log("Launch");
+        if (coroutineAllowed && TargetLaunched == null)
+        {
+            StartCoroutine(Launch());
+        }
     }
 
     private IEnumerator Launch()
     {
         coroutineAllowed = false;
-        Instantiate(target, BMlaunchPoint);
+        TargetLaunched = Instantiate(target, BMlaunchPoint);
         yield return new WaitForSeconds(timeBetween);
         BMlaunched= Instantiate(BallisticMissile, BMlaunchPoint);
         coroutineAllowed = true;
