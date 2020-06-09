@@ -8,10 +8,12 @@ public class Grabable : MonoBehaviour
     public Vector3 m_offsetBody = Vector3.zero;
     private GameObject LaunchPt;
     private GameObject mainCamera;
+    private GameObject Button;
     private GameObject BM;
     private Transform Socket;
+    public float coolDownTimer;
     public Material ButtonM;
-    private bool Clicked=false;
+    public bool Clicked=false;
     
 
     [HideInInspector]
@@ -19,6 +21,8 @@ public class Grabable : MonoBehaviour
 
     private void Awake()
     {
+        coolDownTimer = 5f;
+        Button = GameObject.FindGameObjectWithTag("Button");
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         LaunchPt = GameObject.FindGameObjectWithTag("BMLaunchPoint");
         Socket = GameObject.Find("Socket").GetComponent<Transform>();
@@ -37,10 +41,13 @@ public class Grabable : MonoBehaviour
         if(Clicked==false)
         {
             ButtonM.color = Color.green;
+            Button.GetComponent<buttonHit>().release();
+            StopCoroutine(Countdount());
         }
         if(Clicked==true)
         {
             ButtonM.color = Color.red;
+            StartCoroutine(Countdount());
         }
     }
 
@@ -65,7 +72,7 @@ public class Grabable : MonoBehaviour
 
     private IEnumerator Countdount()
     {
-        yield return new WaitForSeconds(60f);
-        Clicked = false;        
+        yield return new WaitForSeconds(coolDownTimer);
+        Clicked = false;       
     }
 }

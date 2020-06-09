@@ -13,6 +13,8 @@ public class ControllerInput : MonoBehaviour
     
     private SteamVR_TrackedObject trackedObj;
 
+    [SerializeField]private GameObject ParentOrigin;
+
     private SteamVR_Behaviour_Pose m_Pose = null;
     private FixedJoint m_Joint = null;
 
@@ -33,7 +35,7 @@ public class ControllerInput : MonoBehaviour
 
     private void Awake()
     {
-       
+        ParentOrigin = GameObject.Find("Trigger");
         m_Pose = GetComponent<SteamVR_Behaviour_Pose>();
         m_Joint = GetComponent<FixedJoint>();
     }
@@ -140,6 +142,7 @@ public class ControllerInput : MonoBehaviour
     IEnumerator Dropping()
     {
         //Dettach
+        m_CurrentGrabable.transform.SetParent(ParentOrigin.transform);
         m_Joint.connectedBody = null;
         //Deactivate
         m_CurrentGrabable.m_Activated = null;
