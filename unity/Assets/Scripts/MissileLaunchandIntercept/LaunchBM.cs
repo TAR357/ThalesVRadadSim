@@ -27,7 +27,7 @@ public class LaunchBM : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.X))
         {
-            if(coroutineAllowed && TargetLaunched == null)
+            if(coroutineAllowed && BMlaunched == null)
             {
                 StartCoroutine(Launch());
             }
@@ -37,7 +37,7 @@ public class LaunchBM : MonoBehaviour
     public void ButtonLaunch()
     {
         Debug.Log("Launch");
-        if (coroutineAllowed && TargetLaunched == null)
+        if (coroutineAllowed && BMlaunched == null)
         {
             StartCoroutine(Launch());
         }
@@ -45,10 +45,13 @@ public class LaunchBM : MonoBehaviour
 
     private IEnumerator Launch()
     {
-        coroutineAllowed = false;
-        TargetLaunched = Instantiate(target, BMlaunchPoint);
-        yield return new WaitForSeconds(timeBetween);
-        BMlaunched= Instantiate(BallisticMissile, BMlaunchPoint);
-        coroutineAllowed = true;
+        if(TargetLaunched==null)
+        {
+            coroutineAllowed = false;
+            TargetLaunched = Instantiate(target, BMlaunchPoint);
+            yield return new WaitForSeconds(timeBetween);
+            BMlaunched = Instantiate(BallisticMissile, BMlaunchPoint);
+            coroutineAllowed = true;
+        }       
     }
 }

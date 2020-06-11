@@ -26,6 +26,9 @@ public class ControllerInput : MonoBehaviour
     public SteamVR_Action_Boolean m_touchpadAction=null;
     public SteamVR_Action_Boolean m_gripAction = null;
 
+    private bool HelpisOn = false;
+    public GameObject MapLegend;
+
     [SerializeField] private GameObject leftController = null;
     [SerializeField] private GameObject rightController = null;
     [SerializeField] private RigControl playerRig = null;
@@ -38,12 +41,14 @@ public class ControllerInput : MonoBehaviour
         ParentOrigin = GameObject.Find("Trigger");
         m_Pose = GetComponent<SteamVR_Behaviour_Pose>();
         m_Joint = GetComponent<FixedJoint>();
+        MapLegend = GameObject.Find("MapLegend");
     }
 
     void Start()
     {
         //sets the trakcing object
         trackedObj = GetComponent<SteamVR_TrackedObject>();
+        MapLegend.SetActive(false);
     }
 
     void Update()
@@ -61,6 +66,23 @@ public class ControllerInput : MonoBehaviour
             {
                 playerRig.isLeftGripped = false;               
             }
+
+            if (MapLegend != null)
+            {
+                if (m_touchpadAction.GetStateDown(m_Pose.inputSource))
+                {
+                    if (HelpisOn == false)
+                    {
+                        StartCoroutine("MapLegendActivate");
+                        StopCoroutine("MapLegendDeactivate");
+                    }
+                    if (HelpisOn == true)
+                    {
+                        StopCoroutine("MapLegendActivate");
+                        StartCoroutine("MapLegendDeactivate");
+                    }
+                }
+            }
         }
 
         else if (gameObject == rightController)
@@ -75,17 +97,7 @@ public class ControllerInput : MonoBehaviour
                 playerRig.isRightGripped = false;                
             }
         }
-        if(itemGrabbed==true)
-        {
-            if (m_touchpadAction.GetStateDown(m_Pose.inputSource))
-            {
-                Debug.Log("ButtonClicked");
-                if (itemGrabbed == true)
-                {
-                    m_CurrentGrabable.action();
-                }
-            }
-        }
+        
 
         if (m_gripAction.GetStateDown(m_Pose.inputSource))
         {
@@ -135,7 +147,7 @@ public class ControllerInput : MonoBehaviour
         //Activate
         m_CurrentGrabable.m_Activated = this;
         m_CurrentGrabable.transform.SetParent(gameObject.transform);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         itemGrabbed = true;       
     }
 
@@ -146,10 +158,23 @@ public class ControllerInput : MonoBehaviour
         m_Joint.connectedBody = null;
         //Deactivate
         m_CurrentGrabable.m_Activated = null;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         itemGrabbed = false;
     }
 
+    IEnumerator MapLegendActivate()
+    {
+        MapLegend.SetActive(true);          
+        yield return new WaitForSeconds(0.5f);
+        HelpisOn = true;
+    }
+
+    IEnumerator MapLegendDeactivate()
+    {
+        MapLegend.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        HelpisOn = false;
+    }
     
 
     private Grabable NearestGrabable()

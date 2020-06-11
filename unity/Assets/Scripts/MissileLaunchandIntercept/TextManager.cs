@@ -12,6 +12,7 @@ public class TextManager : MonoBehaviour
     public GameObject Radar;    
     private GameObject BM;
     private GameObject IM;
+    private bool LAUNCHED;
     //private TextMeshProUGUI Warning;
     // Start is called before the first frame update
     void Start()
@@ -32,13 +33,21 @@ public class TextManager : MonoBehaviour
         if(BM != null && IM==null)
         {
             StatusGO.SetActive(true);
-            BMLaunched();           
+            BMLaunched();
+            LAUNCHED = true;
         }        
         if(Radar.GetComponent<RadarDetection>().MissileDetected==true)
         {
             BMDetected();
             StartCoroutine("WarningLoop");
         }            
+        if(LAUNCHED==true)
+        {
+            if(BM == null && IM == null)
+            {
+                StartCoroutine("Impact");                                    
+            }
+        }
         
     }
 
@@ -52,15 +61,18 @@ public class TextManager : MonoBehaviour
         Status.text = "Ballistic Missile Detected";
     }
 
-    public void Impact()
+    private IEnumerator Impact()
     {
-        Status.text = "Impact";
+        Status.text = "Ballistic Missile Destroyed";
+        yield return new WaitForSeconds(2f);
+        LAUNCHED = false;
+        StatusGO.SetActive(false);
     }
 
     private IEnumerator WarningLoop()
     {
         warningGO.SetActive(true);       
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(3f);
         warningGO.SetActive(false);
         StopCoroutine("WarningLoop");
     }
