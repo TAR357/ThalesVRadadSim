@@ -32,12 +32,14 @@ public class LaunchBM : MonoBehaviour
                 StartCoroutine(Launch());
             }
         }
+        Debug.Log("CoroutineAllowed:" + coroutineAllowed);
+        //Debug.Log("BMLaunched" + BMlaunched.name);
     }
     
     public void ButtonLaunch()
     {
         Debug.Log("Launch");
-        if (coroutineAllowed && BMlaunched == null)
+        if (coroutineAllowed==true)
         {
             StartCoroutine(Launch());
         }
@@ -48,9 +50,9 @@ public class LaunchBM : MonoBehaviour
         if(TargetLaunched==null)
         {
             coroutineAllowed = false;
-            TargetLaunched = Instantiate(target, BMlaunchPoint);
+            Instantiate(target, BMlaunchPoint);
             yield return new WaitForSeconds(timeBetween);
-            BMlaunched = Instantiate(BallisticMissile, BMlaunchPoint);
+            Instantiate(BallisticMissile, BMlaunchPoint);
             coroutineAllowed = true;
         }       
     }

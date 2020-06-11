@@ -476,7 +476,6 @@ public class RigControl : MonoBehaviour
         //scaling of the player
 
         float p = (initialGrabDistance / currentGrabDistance);
-        Debug.Log(p);
         float pMap = (currentGrabDistanceM / initialGrabDistanceM);
 
         // calculate new object scale with p

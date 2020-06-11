@@ -9,18 +9,17 @@ public class SymbolScale : MonoBehaviour
     public GameObject[] MSymbols;
 
     private Vector3 defaultScale = new Vector3(100f, 100f, 100f);
-    private Vector3 baseScale = new Vector3(300f, 300f, 300f);
+    private Vector3 MSymbolScale = new Vector3(200f, 200f, 200f);
+    private Vector3 baseScale = new Vector3(400f, 400f, 400f);
     private float scale;
     private float symbolScale;
     private float tempScale;
 
     // Start is called before the first frame update
     void Start()
-    {
-        tempScale = 300f;
+    {        
         Symbols = GameObject.FindGameObjectsWithTag("Symbol");
-        MSymbols = GameObject.FindGameObjectsWithTag("MSymbol");
-        symbolScale = 100f;
+        MSymbols = GameObject.FindGameObjectsWithTag("MSymbol");        
     }
 
     // Update is called once per frame
@@ -31,12 +30,12 @@ public class SymbolScale : MonoBehaviour
         //Debug.Log(scale);
         foreach (GameObject symbol in Symbols)
         {
-            if (scale > 300)
+            if (scale > 400)
             {
                 symbol.SetActive(false);
                 scaledSymbol();
             }
-            else if(scale<=300)
+            else if(scale<=400)
             {
                 symbol.SetActive(true);
                 scaledSymbol();
@@ -46,33 +45,20 @@ public class SymbolScale : MonoBehaviour
         
             
     }
-
-    /*foreach (GameObject symbol in Symbols)
-    {         
-
-        if(scale>300)
-        {
-            symbol.SetActive(false);
-            symbol.transform.localScale = new Vector3(100f, 100f, 100f);
-        }            
-        else if (scale < 300)
-        {
-            symbol.SetActive(true);                
-        }            
-        if (scale < 150)
-        {
-            symbol.transform.localScale = new Vector3(200, 200, 200);
-        }           
-        if (scale==100)
-        {
-            symbol.transform.localScale = new Vector3(500, 500, 500);
-        }
-    }*/
+        
     public void scaledSymbol()
     {
         foreach (GameObject symbol in Symbols)
         {
             symbol.transform.localScale = defaultScale + (baseScale - ThalesScale.transform.localScale)*2;
+        }
+    }
+
+    public void scaledMSymbol()
+    {
+        foreach (GameObject msymbol in MSymbols)
+        {
+            msymbol.transform.localScale = MSymbolScale + (baseScale - ThalesScale.transform.localScale) * 2;
         }
     }
 }
