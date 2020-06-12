@@ -8,6 +8,7 @@ public class TrajectoryFollow : MonoBehaviour
     private GameObject Trajectory;
     private Vector3 objloc;
     public GameObject explosion;
+    private GameObject SpawnedExplosion;
     [SerializeField]
     private Transform TrajectoryTransform;
     [SerializeField]
@@ -36,7 +37,7 @@ public class TrajectoryFollow : MonoBehaviour
     }
 
     private void Update()
-    {
+    {        
         objloc = gameObject.transform.position;
         for (int i = 0; i < TrajectoryTransform.childCount; i++)
         {
@@ -54,7 +55,8 @@ public class TrajectoryFollow : MonoBehaviour
     {
         if (other.gameObject.tag == "IM")
         {
-            Instantiate(explosion, objloc, Quaternion.identity);
+            SpawnedExplosion = Instantiate(explosion, objloc, Quaternion.identity);
+            StartCoroutine(DestroyExplosion());
             Destroy(gameObject);            
             Destroy(other.gameObject);            
         }
@@ -87,5 +89,9 @@ public class TrajectoryFollow : MonoBehaviour
         coroutineAllowed = true;
     }
 
- 
+    private IEnumerator DestroyExplosion()
+    {
+        yield return new WaitForSeconds(3f);
+        Destroy(SpawnedExplosion.gameObject);        
+    }
 }

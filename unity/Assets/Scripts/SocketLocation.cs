@@ -3,7 +3,7 @@ using Valve.VR;
 
 public class SocketLocation : MonoBehaviour
 {
-    [Range(0.5f, 0.75f)]
+    [Range(-1f, 1f)]
     public float height=0.75f;
 
     public Transform head = null;
@@ -16,15 +16,15 @@ public class SocketLocation : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {        
-        PositionUnderHead();
+    {
         RotateUnderHead();
+        PositionUnderHead();        
     }
 
     private void PositionUnderHead()
     {
         Vector3 adjustedHeight = head.localPosition;
-        Debug.Log(adjustedHeight);
+        Debug.Log(adjustedHeight.y);
         adjustedHeight.y = Mathf.Lerp(0.0f, adjustedHeight.y, height);
 
         transform.localPosition = adjustedHeight;
